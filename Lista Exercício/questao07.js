@@ -22,3 +22,5 @@ function analisarDesempenho(pontuacoes) {
 
 let stringPontuacoes = "10 20 20 8 25 3 0 30 1"
 console.log(analisarDesempenho(stringPontuacoes))
+
+//Versionamento no Git: 7 exercícios resolvidos
