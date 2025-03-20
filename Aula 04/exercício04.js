@@ -11,6 +11,6 @@ function somarNumeros(numeros) {
       return soma
 }
 
-const numeros = [6, 6]
+const numeros = [6, 6, 4, 5, 2, 10, 12]
 const resultado = somarNumeros(numeros)
 console.log(resultado)
