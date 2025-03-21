@@ -1,9 +1,3 @@
-/*function filtrarDevedores(reais) {
-    const acima_oitenta = reais.filter
-
-} */
-
-
 const devedoresTotais = [90, 87.2, 32, 180.45]
 
 const devedoresOitenta = devedoresTotais.filter(filtrarDevedores)
