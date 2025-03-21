@@ -17,4 +17,4 @@ function gerenciarListas(a, b, acao, numero) {
 
 const lista1 = ["Maca", "Banana"]
 const lista2 = ["Kiwi", "Pera"]
-console.log(gerenciarListas(lista1, lista2, "removerUltimos", 4))
+console.log(gerenciarListas(lista1, lista2, "removerUltimos", 1))
