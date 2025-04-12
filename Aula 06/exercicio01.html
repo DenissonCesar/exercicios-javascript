@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 1</title>
+</head>
+<body>
+    <button onclick="alert('Evento Inline!')">Clique (Inline)</button>
+    <button id="btn2">Clique (`onclick`)</button>
+    <button id="btn3">Clique (`addEventListener`)</button>
+
+    <script>
+        document.getElementById('btn2').onclick = function() {
+            alert('Evento com onclick!');
+        };
+
+        document.getElementById('btn3').addEventListener('click', function() {
+            alert('Evento com addEventListener!');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercício 5</title>
+</head>
+<body>
+    <div id="titleContainer">
+        <h2 id="mainTitle">Título Original</h2>
+    </div>
+    <button id="replaceTitle">Substituir Título</button>
+
+    <script>
+        const button = document.getElementById("replaceTitle");
+        const titleContainer = document.getElementById("titleContainer");
+
+        button.addEventListener("click", function() {
+            const newTitle = document.createElement("h2");
+            newTitle.textContent = "Título Substituído!";
+            titleContainer.replaceChild(newTitle, document.getElementById("mainTitle"));
+        });
+    </script>
+</body>
+</html>

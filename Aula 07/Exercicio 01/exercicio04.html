@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 4</title>
+    <style>
+        .negrito {
+            font-weight: bold;
+        }
+
+        .sublinhado {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <ul id="lista">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ul>
+
+    <button id="resetBtn">Reset</button>
+
+    <script>
+        const lista = document.querySelectorAll("#lista li");
+        const resetBtn = document.getElementById("resetBtn");
+
+        lista.forEach(item => {
+            item.addEventListener("click", () => {
+                const anterior = item.previousElementSibling;
+                const proximo = item.nextElementSibling;
+
+                if (anterior) anterior.classList.add("sublinhado");
+                if (proximo) proximo.classList.add("negrito");
+            });
+        });
+
+        resetBtn.addEventListener("click", () => {
+            lista.forEach(item => {
+                item.classList.remove("sublinhado", "negrito");
+            });
+        });
+    </script>
+</body>
+</html>

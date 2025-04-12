@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercício 1</title>
+</head>
+<body>
+    <div id="content"></div>
+    <button id="addParagraph">Adicionar Parágrafo</button>
+
+    <script>
+        const button = document.getElementById("addParagraph");
+        const contentDiv = document.getElementById("content");
+
+        button.addEventListener("click", function() {
+            const newParagraph = document.createElement("p");  // Cria o elemento <p>
+            newParagraph.textContent = "Novo parágrafo adicionado!";  // Adiciona o texto ao parágrafo
+            contentDiv.appendChild(newParagraph);  // Adiciona o parágrafo à div "content"
+        });
+    </script>
+</body>
+</html>
